@@ -11,26 +11,26 @@ in assembly i can write bl exit and have it not work unless i find or make a mod
 ## Module Examples
 
 Exit Module For AARCH64:
-`
+
 .global exit
 
 .section .text
 exit:
   mov x8, #93
   svc #0
-`
+
 
 Script With Exit Module
-`
+
 .global _start
 
 .section .text
 _start:
   mov x0, #0
   bl exit
-`
 
-compiling
+
+compiling: 
 `
 asm2 -j exitModule.o -o main.o -f main main.s
 `
