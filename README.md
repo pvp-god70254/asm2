@@ -48,4 +48,4 @@ Installing incompatable modules can break asm2, so you can use asm2 -l to list m
 and then use
 `asm2 -d brokenModule.s.o` to remove it
 
-There are 2 modules for aarch64/arm64 assembly located at the OptionalModules[https://github.com/pvp-god70254/asm2/tree/master/OptionalModules] Folder
+There are 2 modules for aarch64/arm64 assembly located at the [OptionalModules Folder](https://github.com/pvp-god70254/asm2/tree/master/OptionalModules)
