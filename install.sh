@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd $(dirname $0)
+
 if [ ! $(id -u) -eq 0 ]; then
   echo "Please run script as root to install"
   exit 1

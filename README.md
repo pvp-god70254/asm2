@@ -4,9 +4,9 @@ ASM2 is the better version of the as command, it takes your code and adds your o
 
 ## Using Modules
 
-ASM2 uses ld -s <object> <modules> -o <output>, you can also use -j to add 1-time modules for compiling
+ASM2 uses ld -s <object> <modules> <extModules> -o <output>, you can also use -j to add 1-time modules for compiling
 
-in assembly i can write bl exit and have it not work unless i find or make a module and use asm2 -m exitModule.o -o exit.o which bl exit will now work when compiled with modules. 
+in assembly i can write bl exit and have it not work unless i find or make a module and use asm2 -m exitModule.s -o exit.o which bl exit will now work when compiled with modules. 
 
 ## Module Examples
 
@@ -36,6 +36,6 @@ asm2 -j exitModule.o -o main.o -f main main.s
 `
 or
 `
-asm -m exitModule.o -o exit.o
+asm -m exitModule.s -o exit.o
 asm -o main.o -f main main.s
 `
