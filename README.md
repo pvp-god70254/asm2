@@ -39,3 +39,13 @@ or
 asm -m exitModule.s -o exit.o
 asm -o main.o -f main main.s
 `
+
+###Modules
+Installing incompatable modules can break asm2, so you can use asm2 -l to list modules
+`asm2 -l`
+
+`/home/pvpgod/brokenModule.s.o`
+and then use
+`asm2 -d brokenModule.s.o` to remove it
+
+There are 2 modules for aarch64/arm64 assembly located at the OptionalModules(https://github.com/pvp-god70254/asm2/tree/master/OptionalModules) Folder
