@@ -41,7 +41,7 @@ asm -o main.o -f main main.s
 `
 
 ### Modules
-Installing incompatable modules can break asm2, so you can use asm2 -l to list modules
+Installing incompatible modules can break asm2, so you can use asm2 -l to list modules
 `asm2 -l`
 
 `/home/pvpgod/brokenModule.s.o`
