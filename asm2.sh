@@ -57,7 +57,7 @@ while [[ $# -gt 0 ]]; do
       shift 2
       ;;
     -l)
-	find $HOME/.assemblyModules/*
+	find "$HOME/.assemblyModules/*"
 	exit 0
 	;;
     *)
